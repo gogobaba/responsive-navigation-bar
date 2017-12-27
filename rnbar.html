@@ -1,0 +1,36 @@
+<html>
+<head>
+    
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="rnbar.css">
+<script src="https://use.fontawesome.com/1a909009be.js"></script>
+    
+</head>
+<body>
+    
+<div class="toggle">
+  <i class="fa fa-bars menu"  aria-hidden="true"></i> 
+</div>
+<ul id="ultag">
+<li><a href="#Home">Home</a></li>   
+<li><a href="#">Portfolio</a></li>   
+<li><a href="#">News</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+   
+    
+    
+<script>
+    var menu = document.querySelector('.menu');
+    var ul = document.getElementById('ultag');
+    menu.addEventListener('click',function(e){
+        e.preventDefault();
+        ul.classList.toggle('active');
+    })
+    
+</script>
+    
+    
+</body>
+</html>
